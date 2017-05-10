@@ -1,0 +1,70 @@
+\documentclass[10pt,twocolumn,letterpaper]{article}
+
+\usepackage{cvpr}
+\usepackage{times}
+\usepackage{epsfig}
+\usepackage{graphicx}
+\usepackage{amsmath}
+\usepackage{amssymb}
+
+% Include other packages here, before hyperref.
+
+% If you comment hyperref and then uncomment it, you should delete
+% egpaper.aux before re-running latex.  (Or just hit 'q' on the first latex
+% run, let it finish, and you should be clear).
+\usepackage[breaklinks=true,bookmarks=false]{hyperref}
+
+\cvprfinalcopy % *** Uncomment this line for the final submission
+
+\def\cvprPaperID{****} % *** Enter the CVPR Paper ID here
+\def\httilde{\mbox{\tt\raisebox{-.5ex}{\symbol{126}}}}
+
+% Pages are numbered in submission mode, and unnumbered in camera-ready
+%\ifcvprfinal\pagestyle{empty}\fi
+\setcounter{page}{1}
+\begin{document}
+
+%%%%%%%%% TITLE
+\title{\LaTeX\ Brain Tumor Project Documentaiton}
+
+
+\maketitle
+%\thispagestyle{empty}
+
+%%%%%%%%% Concept 
+\begin{abstract}
+\end{abstract}
+
+%%%%%%%%% BODY TEXT
+\section{Introduction}
+
+This project Uses Data set of a differnet brain tumor\linebreak
+pictures and train that data set for future discovery of this
+matter.
+
+%-------------------------------------------------------------------------
+\subsection{Programming Language}
+
+Python
+
+\subsection{Mapping}
+Mapping Data set was done through saving their paths in a text file called Map.txt
+%-------------------------------------------------------------------------
+
+\subsection{Mathematics}
+
+Mathmatics functions used in the project are conv2d,maxpool2d,localresponsenormalization.\linebreak
+These funcitons are a part of tflearn liberary.
+
+%------------------------------------------------------------------------
+\section{Code Details}
+The Code follows a pattern in which it gets the mapped files from the Map.txt file, then it stores them into an X and Y arrays. The mapped files (which are the data set pictures) are reshaped
+into 28x28 size and turend a gray scale so that the system is trained using alpha points to identify a tumor.
+The code works at accuarcy of 0.97 and lost value of 0.2 with 10000 epochs.
+
+%---------------------------------------------------
+\section{References}
+
+The whole project was uploaded on Github: https://github.com/Kamzoki/NNProject
+You can also find the project on the same DVD which this document on, along with all the assets.
+\end{document}
